@@ -1,6 +1,8 @@
 # Freelance Class - Eduwork.id
 
-### Student Profile 
+### Student Profile
 
 Name : Aries Dimas Yudhistira \
-Title : Freelance Web Developer \ 
+Title : Freelance Web Developer
+
+branch : aries-dimas
