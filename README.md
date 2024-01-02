@@ -2,5 +2,5 @@
 
 ### Student Profile 
 
-Name : Aries Dimas Yudhistira 
-Title : Freelance Web Developer 
+Name : Aries Dimas Yudhistira \
+Title : Freelance Web Developer \ 
