@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./assets/prism.css" type="text/css" />
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: bisque;
+            border: 4px solid chocolate;
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .circle {
+            display: inline-block;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        Hello
+    </div>
+    <div class="circle box">
+        World
+    </div>
+    <pre><code class="language-css">
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: bisque;
+            border:1px solid 
+        }
+
+        .circle {
+            display: inline-block;
+            border-radius: 50%;
+        }
+    </code></pre>
+    <p> Penjelasan attribut</p>
+    <ol>
+        <li> width: untuk memberikan lebar pada komponen </li>
+        <li> height: untuk memberikan tinggi pada komponen </li>
+        <li> background-color: untuk memberikan background color pada komponen </li>
+
+        <li> border: untuk memberikan border/pinggiran component. bisa di set ketebalan nya, tipe garis nya serta
+            warnanya </li>
+        <li> display: memberikan sifat dari element.
+            apakah dia box ( yaitu menempatkan dirinya sebagai 1 row, tidak ada komponen lain di sampingnya ) </li>
+        apakah dia inline ( yaitu menempatka nirinya sebagai text, ada component lain di sampingnya )
+        <li> margin-right : memberikan jarak ke sebelah kanan komponen </li>
+        <li> color : memberikan warna pada huruf yg di dalam komponen </li>
+        <li> border-radius : memberikan ketumpulan pada sudut component </li>
+        <li> padding : memberikan jarak dari border terhadap isi dari element nya </li>
+        <li> z-index: memberikan tingkat prioritas kemunculan component terhadap komponent yang lain</li>
+    </ol>
+    <div data-src="./content.html" data-type="text/html"></div>
+    <script src="./assets/prism.js"></script>
+</body>
+
+</html>
