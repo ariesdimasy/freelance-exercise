@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Localstorage</title>
+    <style>
+        .form-group {
+            padding: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Tugas LocalStorage </h1>
+    <form onsubmit="">
+        <div class="form-group">
+            <label for="name"> Name </label> <br>
+            <input type="text" id="name" />
+        </div>
+        <div class="form-group">
+            <label> Age </label> <br>
+            <input type="number" id="age" />
+        </div>
+        <div class="form-group">
+            <label> Gender </label> <br>
+            <input type="radio" name="gender" value="male" /> Male
+            <input type="radio" name="gender" value="female" /> Female
+        </div>
+        <div class="form-group">
+            <button type="button" onclick="submitLocalStorage()"> Submit LocalStorage</button>
+        </div>
+    </form>
+    <script>
+        function submitLocalStorage() {
+
+            let name = document.getElementById("name").value
+            let age = document.getElementById("age").value
+            let gender = document.getElementsByName("gender")
+
+            console.log(gender[0].value, gender[1].value)
+
+            let genderResult = gender[0].checked ? gender[0].value : gender[1].value
+
+            localStorage.setItem("name", name)
+            localStorage.setItem("age", age)
+            localStorage.setItem("gender", genderResult)
+        }
+    </script>
+</body>
+
+</html>
