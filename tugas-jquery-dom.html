@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Selector</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+
+    <style>
+        .form-group {
+            padding: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Jquery Selector</h1>
+    <form>
+        <div class="form-group">
+            <label for="name"> Name </label> <br>
+            <input type="text" id="name" onkeyup="changeName()" />
+
+            <h1 id="result">Hello</h1>
+        </div>
+
+
+    </form>
+    <script>
+
+        function changeName() {
+            $("#result").html($('#name').val())
+        }
+
+    </script>
+
+</body>
+
+</html>
