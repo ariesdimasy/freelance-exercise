@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Selector</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <style>
+        .form-group {
+            padding: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Jquery Selector</h1>
+    <form onsubmit="">
+        <div class="form-group">
+            <label for="name"> Name </label> <br>
+            <input type="text" id="name" />
+        </div>
+        <div class="form-group">
+            <label> Age </label> <br>
+            <input type="number" id="age" />
+        </div>
+        <div class="form-group">
+            <label> Gender </label> <br>
+            <input type="radio" name="gender" value="male" /> Male
+            <input type="radio" name="gender" value="female" /> Female
+        </div>
+        <div class="form-group">
+            <button type="button" onclick="submitLocalStorage()"> Submit LocalStorage</button>
+        </div>
+    </form>
+
+    <script>
+        function submitLocalStorage() {
+
+            let name = $("#name").val()
+            let age = $("#age").val()
+            let gender = $("[name=gender]").val()
+
+            localStorage.setItem("name", name)
+            localStorage.setItem("age", age)
+            localStorage.setItem("gender", gender)
+        }
+    </script>
+</body>
+
+</html>
