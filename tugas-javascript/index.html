@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Javascript </title>
+</head>
+
+<body>
+    <h1> Tugas Javascript </h1>
+    <hr />
+    <label> Input Name : </label>
+    <input type="text" id="name" />
+    <button onclick="hello()"> Say Hello </button>
+    <button onClick="setPalindrome()"> Display Palindrome </button>
+    <div id="result"></div>
+    <script>
+        function hello() {
+            let name = document.getElementById("name")
+            let result = document.getElementById("result")
+            if (!name.value) {
+                return alert('name required')
+            }
+
+            result.innerHTML = `<h3> Hello ${name.value} </h3>`
+        }
+
+        function setPalindrome() {
+            let name = document.getElementById("name")
+            let result = document.getElementById("result")
+            if (!name.value) {
+                return alert('name required')
+            }
+
+            let palindrome = ""
+            for (let i = name.value.length - 1; i > 0; i--) {
+                palindrome += name.value[i]
+            }
+
+            console.log(" aaaa" + palindrome)
+
+            result.innerHTML = `<h3>${palindrome}</h3>`
+        }
+    </script>
+</body>
+
+</html>
