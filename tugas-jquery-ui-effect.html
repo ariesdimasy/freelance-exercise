@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery UI Effect</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <style>
+        #box {
+            background-color: tomato;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn-fade-in" disabled> Fade in </button>
+    <button id="btn-fade-out"> Fade Out </button>
+    <div id="box"></div>
+    <script>
+        $("#btn-fade-in").click(() => {
+            $("#btn-fade-in").attr("disabled", true)
+            $("#btn-fade-out").attr("disabled", false)
+            $("#box").fadeIn()
+        })
+        $("#btn-fade-out").click(() => {
+            $("#btn-fade-out").attr("disabled", true)
+            $("#btn-fade-in").attr("disabled", false)
+            $("#box").fadeOut()
+        })
+    </script>
+</body>
+
+</html>
