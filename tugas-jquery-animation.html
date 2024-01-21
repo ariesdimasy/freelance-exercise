@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+</head>
+
+<body style="width: 100%; border: 1px solid black">
+    <div id="box"></div>
+    <button id="btn-animate"> Rotate 80 degree</button>
+    <script>
+        $("#btn-animate").click(() => {
+
+            $("#box").animate({
+                opacity: 0.4,
+                marginLeft: "0.6in",
+                fontSize: "3em",
+                borderWidth: "10px"
+            }, {
+                duration: 1500,
+                step: function () {
+
+
+                    $("#box").css({
+                        transform: 'rotate(' + 80 + 'deg)'
+                    });
+                }
+            });
+
+            // console.log("error")
+        })
+    </script>
+</body>
+
+</html>
