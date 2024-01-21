@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Data Manipulation </title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+</head>
+
+<body>
+    <h1> Jquery Data Manipulation </h1>
+    <hr />
+    <button> Click Me </button>
+    <p> Button belum di click </p>
+    <script>
+        $('button').click(() => {
+            $('p').html('Button <b>sudah</b> di click').css({
+                color: 'green'
+            })
+        })
+    </script>
+</body>
+
+</html>
