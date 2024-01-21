@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Jquery Attr</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+</head>
+
+<body>
+    <img id="preview"
+        src="https://img.freepik.com/free-photo/biotechnology-specialist-laboratory-conducting-experiments_23-2150468696.jpg?w=1380&t=st=1705804339~exp=1705804939~hmac=eba585ba103dea9f0ea60bf991ccd3077cb27a8d321d602be0ff328407f4c9b2"
+        height="200" width="300" />
+    <p> Please , hover the link to preview the image </p>
+    <div><a href="https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/library/content/images/size/w600/2023/10/free-images.jpg"
+            onmouseenter="previewImage(this)"> Image 1 </a></div>
+    <div>
+        <a onmouseenter="previewImage(this)"
+            href="https://img.freepik.com/free-photo/side-view-men-practicing-tai-chi-outside_23-2149893699.jpg?w=1380&t=st=1705804136~exp=1705804736~hmac=f3bf0334002bbbea4644447c6ddd729906b49c449e45dc6720b2aa9d655ded63">
+            Image 2
+        </a>
+    </div>
+    <div>
+        <a onmouseenter="previewImage(this)"
+            href="https://img.freepik.com/free-photo/glowing-molecular-structure-futuristic-galaxy-backdrop-generated-by-ai_188544-27827.jpg?w=1380&t=st=1705804247~exp=1705804847~hmac=fc5ff317c128ef1794bd111697d0f939a0f9aa6bd0ca3d69b528400cb4500a7e">
+            Image 3
+        </a>
+    </div>
+    <script>
+        function previewImage(props) {
+
+            let link = $(props).attr("href")
+
+            let preview = $("#preview").attr("src", link)
+        }
+    </script>
+</body>
+
+</html>
