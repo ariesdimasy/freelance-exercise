@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery UI Effect</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <style>
+        #box {
+            background-color: tomato;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn-show" disabled> Show </button>
+    <button id="btn-hide"> Hide </button>
+    <div id="box"> Tampilkan dan sembunyikan Text </div>
+    <script>
+        $("#btn-show").click(() => {
+            $("#btn-show").attr("disabled", true)
+            $("#btn-hide").attr("disabled", false)
+            $("#box").show("slow", "linear")
+        })
+        $("#btn-hide").click(() => {
+            $("#btn-hide").attr("disabled", true)
+            $("#btn-show").attr("disabled", false)
+            $("#box").hide("slow", "linear")
+        })
+    </script>
+</body>
+
+</html>
