@@ -1,0 +1,22 @@
+@import url('https: //fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.card-adv-1 {
+    width: 451px;
+    height: 278px;
+    background-image: url('./../images/product-image-1.png') ;
+    align-items: center;
+}
+
+.card-adv-2 {
+    width: 451px;
+    height: 278px;
+    background-image: url('./../images/product-image-2.png');
+    align-items: center;
+}
+
+.card-adv-3 {
+    width: 451px;
+    height: 278px;
+    background-image: url('./../images/product-image-3.png');
+    align-items: center;
+}
